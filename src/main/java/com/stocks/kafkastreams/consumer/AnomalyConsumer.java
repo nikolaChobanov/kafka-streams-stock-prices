@@ -19,7 +19,7 @@ public class AnomalyConsumer {
             }
     )
     public void listen(AnomalyAlert alert) {
-        log.warn("🔥 ANOMALY DETECTED for Ticker: {}", alert.getTicker());
+        log.warn("🔥 ANOMALY DETECTED for Ticker: {}", alert.getSymbol());
         log.warn("   Price: {}, Mean: {}, StdDev: {}, Message: {}",
                 alert.getCurrentPrice(),
                 alert.getMeanPrice(),

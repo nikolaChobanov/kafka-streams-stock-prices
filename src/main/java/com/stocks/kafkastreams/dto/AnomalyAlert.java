@@ -11,7 +11,7 @@ import java.time.Instant;
 @AllArgsConstructor
 public class AnomalyAlert {
 
-    private String ticker;
+    private String symbol;
     private double currentPrice;
     private double meanPrice;
     private double standardDeviation;
